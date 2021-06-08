@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Venom - 2 - trailer</title>
+  <title>-😎Venom - 2 - trailer-😎</title>
+  <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_31927.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
   <div class="container">
@@ -17,9 +19,11 @@
         <nav class="nav">
           <ul class="nav-menu">
             <li class="nav-menu__item"><a href="about.html" class="nav-menu__link"> о фильме</a></li>
-            <li class="nav-menu__item"><a href="trailer.html" class="nav-menu__link"> трейлер</a></li>
-            <li class="nav-menu__item"><a href="about.html" class="nav-menu__link"> актеры</a></li>
-            <li class="nav-menu__item"><a href="about.html" class="nav-menu__link"> премьера</a></li>
+            <li class="nav-menu__item"><a data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70" class="nav-menu__link"> трейлер</a></li>
+            <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">актеры</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link">премьера</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -30,9 +34,26 @@
         <p class="film-description">
           В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
         </p>
+        <div class="button-group">
+          <a class="button button-play"  data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70">
+            <img class="button-img" src="img/play.svg" alt="Play" >
+            смотреть трейлер
+          </a>
+          <a href="#" class="button button-ticket">
+            <img class="button-img" src="img/ticket.svg" alt="билет в кину" >
+            билеты на премьеру
+          </a>
+        </div>
       </section>
         <!-- /.hero -->
   </div>
-  <!-- /.container -->
+      <!-- /.container -->
+  <div class="bg-img">
+    <img src="img/bg_image_2.png" alt="картинка" class="img1">
+    <img src="img/bg_image_3.png" alt="картинка" class="img2">
+    <img src="img/venom_2_img.png" alt="картинка" class="img3">
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>

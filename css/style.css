@@ -7,6 +7,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #14131A;
   color: #fff;
+  position: relative;
+  height: 100vh;
 }
 .container {
   max-width: 1140px;
@@ -23,7 +25,7 @@ body {
 
 .logo-link {
   display: inline-block;
-
+  
 }
 
 .nav-menu {
@@ -35,6 +37,7 @@ body {
 
 .nav-menu__item {
   margin-right: 30px;
+  z-index: 4;
 }
 
 .nav-menu__link{
@@ -64,3 +67,74 @@ body {
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
 }  
+
+.button-group {
+  display: flex;
+  margin-top: 70px;
+  z-index: 15;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.button-play {
+  background: #FFFFFF;
+  color: #8D0019;
+  margin-right: 20px;
+  transition: all 0.5s;
+  border: 3px solid transparent;
+
+}
+.button-play:hover {
+  background: #fcb3c0;
+  color: #fff;
+  border: 3px solid #8D0019;
+}
+
+.button-ticket {
+  color: #fff;
+
+}
+
+.button-img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  z-index: -2 ;
+}
+.img3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100%;
+}
