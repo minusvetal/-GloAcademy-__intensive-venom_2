@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #14131A;
+  color: #fff;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+
+.logo-link {
+  display: inline-block;
+
+}
+
+.nav-menu {
+  display: flex;
+  /* padding: 0; */
+  margin: 0;
+  list-style: none;
+}
+
+.nav-menu__item {
+  margin-right: 30px;
+}
+
+.nav-menu__link{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.film-date {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 38px;
+  }
+
+.film-description {
+  max-width: 423px;
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}  
