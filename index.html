@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
-<body>
-  <div class="container">
+<body class="blood">
+  <div class="container" >
       <header class="header">
         <a href="#" class="logo-link">
           <img width="46px" height="70px" class="logo" src="img/logo_venom.png" alt="Logo: Venom" >
         </a>
-        <nav class="nav">
+        <nav class="nav ">
           <ul class="nav-menu">
             <li class="nav-menu__item"><a href="about.html" class="nav-menu__link"> о фильме</a></li>
             <li class="nav-menu__item"><a data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70" class="nav-menu__link"> трейлер</a></li>
@@ -35,25 +35,30 @@
           В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
         </p>
         <div class="button-group">
-          <a class="button button-play"  data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70">
+          <button class="button button-play"  data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70">
             <img class="button-img" src="img/play.svg" alt="Play" >
-            смотреть трейлер
-          </a>
+            <span class="button-text">смотреть трейлер</span>
+        </button>
           <a href="#" class="button button-ticket">
             <img class="button-img" src="img/ticket.svg" alt="билет в кину" >
-            билеты на премьеру
+            <span class="button-text">билеты на премьеру</span> 
           </a>
         </div>
       </section>
         <!-- /.hero -->
-  </div>
+        
+      </div>
       <!-- /.container -->
-  <div class="bg-img">
-    <img src="img/bg_image_2.png" alt="картинка" class="img1">
-    <img src="img/bg_image_3.png" alt="картинка" class="img2">
-    <img src="img/venom_2_img.png" alt="картинка" class="img3">
-  </div>  
+      <div class="layer"id="scene" >
+        <img data-depth="0.5" src="img/bg_image_3.png" alt="картинка" class="venom">
+        <img data-depth="0.2" src="img/venom_2_img.png" alt="картинка" class="venom">
+      </div>
+
+
+<!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
