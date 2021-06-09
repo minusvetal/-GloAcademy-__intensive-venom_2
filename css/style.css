@@ -21,6 +21,10 @@ body {
   margin-bottom: 80px;
 }
 
+.logo {
+  width: 46px;
+  height: 70px;
+}
 .logo-link {
   display: inline-block;
   
@@ -53,7 +57,7 @@ body {
 .film {
   height: 500px;
 }
-.film-date {
+.film__date {
   display: block;
   font-style: normal;
   font-weight: normal;
