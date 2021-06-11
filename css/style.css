@@ -6,10 +6,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  overflow: hidden;
 }
 .container {
   max-width: 1140px;
+  width: 95%;
   margin: 0 auto;
   
 }
@@ -27,12 +27,9 @@ body {
 }
 .logo-link {
   display: inline-block;
-  
 }
-
 .nav-menu {
   display: flex;
-  /* padding: 0; */
   margin: 0;
   list-style: none;
 }
@@ -64,12 +61,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 38px;
+  margin-bottom: 2%;
+  }
+
+.film__logo {
+    width: 80%;
   }
 
 .film-description {
   max-width: 423px;
-  margin-top: 40px;
+  margin-top: 3%;
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
@@ -78,8 +79,7 @@ body {
 
 .button-group {
   display: flex;
-  margin-top: 70px;
-  z-index: 15;
+  margin-top: 5%;
 }
 
 .button {
@@ -99,8 +99,8 @@ body {
   margin-right: 20px;
   transition: all 0.5s;
   border: 3px solid transparent;
-
 }
+
 .button-play:hover {
   background: #fcb3c0;
   color: #fff;
@@ -109,7 +109,6 @@ body {
 
 .button-ticket {
   color: #fff;
-
 }
 
 .button-img {
@@ -119,19 +118,25 @@ body {
   padding: 0;
 }
 
-#scene {
+
+
+.venom {
   position:absolute;
   top: 0;
   right: 0;
+  max-width: 728px;
+  width: 40%;
 }
-
-.venom {
-  width: 100%;
-  height: 100vh;
+.venom-1 {
+  position:absolute;
+  top: 2%;
+  right: 0;
+  max-width: 728px;
+  width: 40%;
 }
 
 .blood {
-  background: #14131A  url('../img/bg_image_2.png') no-repeat center center /100%;
+  background: #14131A  url('../img/bg_image_2.png') no-repeat center center / 100%;
   
 }
 
@@ -139,17 +144,15 @@ body {
 
 /* about */
 
-.about {
-  min-height: 543px;
-
-}
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start ;
 }
 
-
+.about-actors {
+  flex-basis: 50%;
+}
 
 .about-actors__title {
   font-weight: bold;
@@ -160,7 +163,7 @@ body {
 }
 
 .about-actors__text {
-  width: 423px;
+  max-width: 423px;
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
@@ -175,10 +178,9 @@ body {
 }
 
 .about-actors__list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 312px;
-  padding: 0;
+  max-width: 320px;
+  column-count: 2;
+  column-gap: 20px;
   margin-bottom: 38px;
 
 }
@@ -221,16 +223,15 @@ body {
   border: 3px solid #8D0019;
 }
 
-
 .about-director {
   display: flex;
   justify-content: space-between;
-  min-width: 504px;
+  flex-basis: 50%;
   
 }
 .poster__img {
   max-height: 543px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 5px;
 }
 .about-director__title {
@@ -248,7 +249,14 @@ body {
 }
 
 
+.menu-button {
+  display: none;
+}
 
+
+.menu-close {
+  display: none;
+}
 
 @keyframes border-flicker {
   2% {
@@ -315,4 +323,219 @@ body {
     box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
     0 0 12px -1px rgb(0, 180, 230) inset;
   }
+}
+
+
+
+/* @media (max-width: 1024px)  */
+@media (max-width: 1024px) {
+  .about-actors{
+    margin-right: 10px;
+  }
+  .about-actors__text {
+    max-width: 423px;
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .about-actors__items {
+    font-size: 12px;
+    line-height: 110%;
+  }
+  .section-youtube {
+    width: 280px;
+  }
+  .poster {
+    height: 100%;
+    margin-right: 10px;
+  }
+}
+
+
+/* @media (max-width: 768px)  */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 400px;
+  }
+  .blood {
+    background: #14131A;
+  }
+  .header {
+    padding-top: 20px;
+    margin-bottom: 10%;
+  }
+  .nav-menu__link {
+    padding: 10px 5px;
+  }
+  .venom {
+    width: 100%;
+    height: 50%;
+    opacity: .4;
+    z-index: -1;
+  }
+  .venom-1 {
+    top: 10%;
+    width: 40%;
+  }
+  .button {
+    padding: 10px 15px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .about-actors__list {
+    column-count: auto;
+  }
+  .about-actors__text {
+    width: 95%;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  .about-director {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .about-actors__list {
+    margin-bottom: 5%;
+  
+  }
+  .about-director__description .about-director__text {
+    justify-content: left;
+  }
+  .section-youtube {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+/* @media (max-width: 576px)  */
+
+@media (max-width: 576px) {
+  .nav {
+    margin-left: auto;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: #fff;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: trasform 0.2s;
+  }
+
+  .nav-menu__item {
+    margin: 2% 0;
+  }
+  .nav-menu__link {
+    color: #14131A;
+  }
+  .menu-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background: #14131A;
+    color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__text {
+    margin-right: 10px;  
+  }
+  .menu-close {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 25px;
+    right: 25px;
+    border: none;
+    background-color: transparent ;
+    z-index: 10;
+    cursor: pointer;
+    transform: translateX(300%);
+    transition: trasform 0.2s;
+  }
+
+  .is-active {
+    transform: translateX(0);
+  }
+  .menu-close__text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-right: 10px;
+  }
+  .menu-close__icon {
+    width: 22px;
+    height: 18px;
+  }
+  .header {
+    padding-top: 5%;
+    margin-bottom: 5%;
+  }
+  .film {
+    text-align: center;
+    width: 100%;
+  }
+  .film__logo {
+    width: 60%;
+  }
+  .film__date {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 2%;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 3%;
+  }
+  .button-play {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .venom-1 {
+    top: 13%;
+    width: 30%;
+  }
+
+}
+
+
+/*@media (max-width: 390px)  */
+
+@media (max-width: 390px) {
+  .button {
+    padding: 6px 8px;
+    margin: 0;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .button-play {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+
 }

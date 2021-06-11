@@ -17,6 +17,14 @@
           <img class="logo" src="img/logo_venom.png" alt="Logo: Venom" >
         </a>
         <nav class="nav ">
+          <button class="menu-button">
+            <span class="menu-button__text">Меню</span>
+            <img src="img/menu.svg" alt="меню" class="menu-buton__icon">
+          </button>
+          <button class="menu-close">
+            <span class="menu-close__text">Закрыть</span>
+            <img src="img/arrow_r.svg" alt="close" class="menu-close__icon">
+          </button>
           <ul class="nav-menu">
             <li class="nav-menu__item"><a href="about.html" class="nav-menu__link"> о фильме</a></li>
             <li class="nav-menu__item"><a data-fancybox href="https://youtu.be/Othd8W8o3t0?t=70" class="nav-menu__link"> трейлер</a></li>
@@ -31,7 +39,7 @@
       <section class="film">
         <h3 class="film__date">16 сентября 2021</h3>
         <img class="film__logo" src="img/Venom_2.svg" alt="venom" >
-        <p class="film-description">
+        <p class="film__description">
           В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.
         </p>
         <div class="button-group">
@@ -49,14 +57,13 @@
         
       </div>
       <!-- /.container -->
-      <div class="layer" id="scene" >
-        <img data-depth="0.5" src="img/bg_image_3.png" alt="картинка" class="venom">
-        <img data-depth="0.2" src="img/venom_2_img.png" alt="картинка" class="venom">
+      <div class="layer" >
+        <img src="img/bg_image_3.png" alt="картинка" class="venom">
+        <img src="img/venom_2_img.png" alt="картинка" class="venom-1">
       </div>
 
 
 <!-- scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
